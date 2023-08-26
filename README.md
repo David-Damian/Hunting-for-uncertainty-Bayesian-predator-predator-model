@@ -14,11 +14,9 @@ Este es un trabajo en colaboración con [Brandon Hernández](https://github.com/
 ├── RMarkdowns/             # Material fuente de para reporte final (RMarkdown).
 ├── data/                   # Datos utilizados en el proyecto.
 └── docs/                   # _Handouts_ de presentaciones de avance y reporte final en formato PDF.
+    └── portada/
     └── presentaciones/
-      └──  avance_1.pdf
-      └──  avance_2.pdf
-      └──  final.pdf
-    └── reporte_final/
+    └── final_report.pdf
 ├── images/                 # Material visual de apoyo (png).
 └── models/                   # Directorio con los modelos de Stan.
     └── compiled/
