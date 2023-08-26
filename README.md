@@ -1,10 +1,12 @@
-# Hunting-for-uncertainty-Bayesian-predator-predator-model
+# Modelación bayesiana de un sistema de especies que compiten.
 Combinando el poder de la estadística bayesiana y la teoría de sistemas dinámicos, aquí se presenta una aplicación interesante en el mundo real del flujo de trabajo bayesiano.
 
 Basado en [Carpenter, B. 2018](https://mc-stan.org/users/documentation/case-studies/lotka-volterra-predator-prey.html) se ha mejorado y agregado originalidad al flujo de trabajo bayesiano presentado. Esto se logró incluyendo pasos adicionales, como la calibración basada en simulación, además
-pronóstico y retrospectiva, y un análisis detallado del sistema dinámico definido por las [ecuaciones de Lotka-Volterra] (https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations).
+pronóstico y retrospectiva, y un análisis detallado del sistema dinámico definido por las [ecuaciones de Lotka-Volterra](https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations).
 
 Este es un trabajo en colaboración con [Brandon Hernández](https://github.com/BrandonHT)
+
+![](imagenes/post_checks1.png)
 
 ## Estructura de repositorio
 ```
