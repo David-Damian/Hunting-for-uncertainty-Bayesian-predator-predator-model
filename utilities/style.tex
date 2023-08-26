@@ -1,0 +1,145 @@
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ total={195mm,280mm},
+ left=15mm,
+ right=15mm,
+ top=15mm,
+ bottom=15mm,
+ }
+% \renewcommand{\familydefault}{\sfdefault}
+\usepackage{xcolor}
+\usepackage[skins]{tcolorbox}
+
+\usepackage[spanish, es-nodecimaldot]{babel}
+
+\tcbset{mystyle/.style={
+enhanced,
+outer arc=0pt,
+arc=0pt,
+colframe=teal,
+attach boxed title to top left,
+boxed title style={
+  colback=teal,
+  outer arc=0pt,
+  arc=0pt,
+  },
+title=Example~\thetcbcounter,
+fonttitle=\sffamily
+}
+}
+\newtcolorbox[auto counter]{Example}[1][]{
+mystyle,
+colback=white,
+rightrule=0pt,
+toprule=0pt,
+title=EJERCICIO\text{},
+}
+
+\tcbset{mystyle1/.style={
+enhanced,
+outer arc=0pt,
+arc=0pt,
+colframe=red,
+attach boxed title to top left,
+boxed title style={
+  colback=red,
+  outer arc=0pt,
+  arc=0pt,
+  },
+title=Nota~\thetcbcounter,
+fonttitle=\sffamily
+}
+}
+\newtcolorbox[auto counter]{Nota}[1][]{
+mystyle1,
+colback=white,
+rightrule=0pt,
+toprule=0pt,
+title=Nota\text{},
+}
+\definecolor{coolblue}{RGB}{0,163,243}
+\tcbset{mystyle2/.style={
+enhanced,
+outer arc=0pt,
+arc=0pt,
+colframe=coolblue,
+colback=coolblue!20,
+attach boxed title to top left,
+boxed title style={
+  colback=coolblue,
+  outer arc=0pt,
+  arc=0pt,
+  },
+title=supuestos~\thetcbcounter,
+fonttitle=\sffamily
+}
+}
+\newtcolorbox[auto counter]{supuestos}[1][]{
+mystyle2,
+colback=white,
+rightrule=0pt,
+toprule=0pt,
+title=Supuestos del modelo LV\text{},
+}
+
+\definecolor{coolblue}{RGB}{0,163,243}
+\tcbset{
+  mystyle2/.style={
+    enhanced,
+    outer arc=0pt,
+    arc=0pt,
+    colframe=coolblue,
+    colback=coolblue!20,
+    attach boxed title to top left,
+    boxed title style={
+      colback=coolblue,
+      outer arc=0pt,
+      arc=0pt,
+      },
+    fonttitle=\sffamily,
+    % Agregamos un \hfill para colocar el nombre del modelo al lado del título
+    title={Modelo~\thetcbcounter\hfill#1},
+  },
+}
+
+\newtcolorbox[auto counter]{modelo}[1][]{
+  mystyle2={#1},
+  colback=white,
+  rightrule=0pt,
+  toprule=0pt,
+  % Eliminamos el título de aquí para evitar duplicación
+}
+
+\newcommand{\diff}[2]{\frac{\text{d}}{\text{d}#2}#1}
+\newcommand{\normal}[2]{\textsf{\textbf{N}}(#1,#2)}
+\newcommand{\lognormal}[2]{\textsf{\textbf{Log-normal}}(#1,#2)}
+
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\renewcommand{\theenumi}{\alph{enumi})}
+\usepackage{amsmath}%para alinear ecuaciones
+\usepackage{amsfonts}%para letras tipo los reales
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{enumitem} % enumera listas
+\newtheorem{theorem}{Teorema}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+\newtheorem{definition}{Definición}
